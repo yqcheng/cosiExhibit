@@ -1,0 +1,176 @@
+html {
+  font-size: 18px;
+  font-family: Arial;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner_pic img,
+.footer_pic img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1200px;
+  color: white;
+  margin-top: 3rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.overlay {
+  background-size:cover;
+  position: relative; /* limit the overlay only
+                     in the cubes instead of whole screen*/
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+
+.overlay:before { /* Grey Overlay */
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.30);
+  transition: all ease-in-out 200ms;
+}
+
+.overlay:hover::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay * {/* Makes elements display above overlay. */
+  position: relative;
+}
+
+.cube {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 0.7rem;
+  line-height: 1.1rem;
+}
+
+.cube h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cube p {
+  font-size: 0.8rem;
+}
+
+.cube h2 {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.title_desc {
+  margin-top: 1.5rem;
+}
+
+
+/******* first row *******/
+.small_cube {
+  width: 24%;
+  height: 16rem;
+}
+
+#space {
+  background-image: url("../images/space.png");
+}
+
+#live {
+  background-image: url("../images/rat.png");
+}
+
+#ocean {
+  background-image: url("../images/ocean.png");
+}
+
+#life {
+  background-image: url("../images/life.png");
+}
+
+
+/******* second row *******/
+.big_cube {
+  width: 32.5%;
+  height: 21.67rem;
+}
+
+#park {
+  background-image: url("../images/park.png");
+}
+
+#energy {
+  background-image: url("../images/energy.png");
+}
+
+#hall {
+  background-image: url("../images/hall.png");
+}
+
+/******* long row *******/
+.long {
+  width: 100%;
+  height: 16rem;
+}
+
+#littlekid {
+  background-image: url("../images/littlekid.png");
+}
+
+.long .cube {
+  width: 40%;
+}
+
+/******* fourth row *******/
+#progress {
+  background-image: url("../images/progress.png");
+}
+
+#gadget {
+  background-image: url("../images/gadget.png");
+}
+
+#lab {
+  background-image: url("../images/lab2.png");
+}
+
+#wosu {
+  background-image: url("../images/wosus.png");
+}
+
+/******* last row *******/
+#classic {
+  background-image: url("../images/clasic.png");
+}
+
+#big {
+  background-image: url("../images/big.png");
+}
+
+#farm {
+  background-image: url("../images/farm.png");
+}
+
+/******* footer *******/
+footer {
+  margin-top: 3rem;
+}
